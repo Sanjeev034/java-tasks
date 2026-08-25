@@ -32,9 +32,10 @@ You are not responsible for printing any output to stdout. The locked stub code 
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-25T04:37:33.330Z  
+**Submitted:** 2026-08-25T04:42:40.009Z  
 
 ```cpp
+public class Solution {
 
     public static void main(String[] args) {
 
