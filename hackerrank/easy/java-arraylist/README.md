@@ -40,66 +40,39 @@ In each line, output the number  located in $y^{th}$ position of $x^{th}$ line. 
 
 ## Solution
 
-**Language:** Java  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-25T04:35:43.545Z  
+**Submitted:** 2026-08-25T04:35:50.607Z  
 
-```java
-import java.io.*;
-import java.util.*;
+```cpp
+            }
 
-public class Solution {
+            list.add(numbers);
+        }
 
-    public static void main(String[] args) throws IOException {
+        // Number of queries
+        int q = Integer.parseInt(br.readLine());
 
-        BufferedReader br = new BufferedReader(
-                new InputStreamReader(System.in));
+        // Process queries
+        for (int i = 0; i < q; i++) {
 
-        // Number of lines
-        int n = Integer.parseInt(br.readLine());
+            String[] query = br.readLine().split(" ");
 
-        ArrayList<ArrayList<Integer>> list = new ArrayList<>();
+            int x = Integer.parseInt(query[0]);
+            int y = Integer.parseInt(query[1]);
 
-        // Read each line
-        for (int i = 0; i < n; i++) {
+            try {
+                // x and y are 1-based
+                System.out.println(list.get(x - 1).get(y - 1));
+            } catch (IndexOutOfBoundsException e) {
+                System.out.println("ERROR!");
+            }
+        }
 
-            String[] input = br.readLine().split(" ");
-
-            int d = Integer.parseInt(input[0]);
-
-            ArrayList<Integer> numbers = new ArrayList<>();
-
-            for (int j = 1; j <= d; j++) {
-                numbers.add(Integer.parseInt(input[j]));
-            }
-
-            list.add(numbers);
-        }
-
-        // Number of queries
-        int q = Integer.parseInt(br.readLine());
-
-        // Process queries
-        for (int i = 0; i < q; i++) {
-
-            String[] query = br.readLine().split(" ");
-
-            int x = Integer.parseInt(query[0]);
-            int y = Integer.parseInt(query[1]);
-
-            try {
-                // x and y are 1-based
-                System.out.println(list.get(x - 1).get(y - 1));
-            } catch (IndexOutOfBoundsException e) {
-                System.out.println("ERROR!");
-            }
-        }
-
-        br.close();
-    }
+        br.close();
+    }
 }
-
 ```
 
 ---
