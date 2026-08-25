@@ -38,72 +38,39 @@ You are not responsible for printing any output to stdout. Locked stub code in *
 
 ## Solution
 
-**Language:** Java  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-25T04:44:52.738Z  
+**Submitted:** 2026-08-25T04:44:59.692Z  
 
-```java
-import java.util.*;
+```cpp
 
-class Checker implements Comparator<Player> {
+        Scanner scan = new Scanner(System.in);
 
-    @Override
-    public int compare(Player a, Player b) {
+        int n = scan.nextInt();
 
-        // Sort by score in descending order
-        if (a.score != b.score) {
-            return b.score - a.score;
-        }
+        Player[] players = new Player[n];
 
-        // If scores are equal, sort by name
-        // in alphabetical order
-        return a.name.compareTo(b.name);
-    }
+        for (int i = 0; i < n; i++) {
+            players[i] = new Player(
+                scan.next(),
+                scan.nextInt()
+            );
+        }
+
+        Checker checker = new Checker();
+
+        Arrays.sort(players, checker);
+
+        for (Player player : players) {
+            System.out.println(
+                player.name + " " + player.score
+            );
+        }
+
+        scan.close();
+    }
 }
-
-class Player {
-
-    String name;
-    int score;
-
-    Player(String name, int score) {
-        this.name = name;
-        this.score = score;
-    }
-}
-
-public class Solution {
-
-    public static void main(String[] args) {
-
-        Scanner scan = new Scanner(System.in);
-
-        int n = scan.nextInt();
-
-        Player[] players = new Player[n];
-
-        for (int i = 0; i < n; i++) {
-            players[i] = new Player(
-                scan.next(),
-                scan.nextInt()
-            );
-        }
-
-        Checker checker = new Checker();
-
-        Arrays.sort(players, checker);
-
-        for (Player player : players) {
-            System.out.println(
-                player.name + " " + player.score
-            );
-        }
-
-        scan.close();
-    }
-}
-
 ```
 
 ---
