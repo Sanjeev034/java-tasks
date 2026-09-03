@@ -47,3 +47,26 @@
 *Last updated: 2026-09-03* · Powered by [**PushMyCode**](https://github.com/PushMyCode-HQ)
 
 </div>
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [0705-design-hashset](https://github.com/Sanjeev034/java-tasks/tree/master/0705-design-hashset) |
+## Hash Table
+|  |
+| ------- |
+| [0705-design-hashset](https://github.com/Sanjeev034/java-tasks/tree/master/0705-design-hashset) |
+## Linked List
+|  |
+| ------- |
+| [0705-design-hashset](https://github.com/Sanjeev034/java-tasks/tree/master/0705-design-hashset) |
+## Design
+|  |
+| ------- |
+| [0705-design-hashset](https://github.com/Sanjeev034/java-tasks/tree/master/0705-design-hashset) |
+## Hash Function
+|  |
+| ------- |
+| [0705-design-hashset](https://github.com/Sanjeev034/java-tasks/tree/master/0705-design-hashset) |
+<!---LeetCode Topics End-->
