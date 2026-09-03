@@ -2,7 +2,7 @@
 
 # 🧠 Coding Solutions
 
-![Total Solved](https://img.shields.io/badge/Total_Solved-2-blue?style=for-the-badge)
+![Total Solved](https://img.shields.io/badge/Total_Solved-1-blue?style=for-the-badge)
 ![Streak](https://img.shields.io/badge/Streak-1_days-orange?style=for-the-badge)
 ![Last Synced](https://img.shields.io/badge/Last_Synced-9--3--2026-green?style=for-the-badge)
 
@@ -16,16 +16,16 @@
 
 | Difficulty | Solved |
 |:---:|:---:|
-| 🟢 Easy | **2** |
-| 🟡 Medium | **0** |
+| 🟢 Easy | **0** |
+| 🟡 Medium | **1** |
 | 🔴 Hard | **0** |
-| **Total** | **2** |
+| **Total** | **1** |
 
 ## 🛠️ Languages
 
 | Language | Solutions |
 |:---:|:---:|
-| Java | **2** |
+| Java | **1** |
 
 ## 📂 Repository Structure
 
@@ -47,39 +47,3 @@
 *Last updated: 2026-09-03* · Powered by [**PushMyCode**](https://github.com/PushMyCode-HQ)
 
 </div>
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Hash Table
-|  |
-| ------- |
-| [1396-design-underground-system](https://github.com/Sanjeev034/java-tasks/tree/master/1396-design-underground-system) |
-## String
-|  |
-| ------- |
-| [1396-design-underground-system](https://github.com/Sanjeev034/java-tasks/tree/master/1396-design-underground-system) |
-## Design
-|  |
-| ------- |
-| [1396-design-underground-system](https://github.com/Sanjeev034/java-tasks/tree/master/1396-design-underground-system) |
-| [1472-design-browser-history](https://github.com/Sanjeev034/java-tasks/tree/master/1472-design-browser-history) |
-## Array
-|  |
-| ------- |
-| [1472-design-browser-history](https://github.com/Sanjeev034/java-tasks/tree/master/1472-design-browser-history) |
-## Linked List
-|  |
-| ------- |
-| [1472-design-browser-history](https://github.com/Sanjeev034/java-tasks/tree/master/1472-design-browser-history) |
-## Stack
-|  |
-| ------- |
-| [1472-design-browser-history](https://github.com/Sanjeev034/java-tasks/tree/master/1472-design-browser-history) |
-## Doubly-Linked List
-|  |
-| ------- |
-| [1472-design-browser-history](https://github.com/Sanjeev034/java-tasks/tree/master/1472-design-browser-history) |
-## Data Stream
-|  |
-| ------- |
-| [1472-design-browser-history](https://github.com/Sanjeev034/java-tasks/tree/master/1472-design-browser-history) |
-<!---LeetCode Topics End-->
