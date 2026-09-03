@@ -47,3 +47,18 @@
 *Last updated: 2026-09-03* · Powered by [**PushMyCode**](https://github.com/PushMyCode-HQ)
 
 </div>
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Design
+|  |
+| ------- |
+| [1603-design-parking-system](https://github.com/Sanjeev034/java-tasks/tree/master/1603-design-parking-system) |
+## Simulation
+|  |
+| ------- |
+| [1603-design-parking-system](https://github.com/Sanjeev034/java-tasks/tree/master/1603-design-parking-system) |
+## Counting
+|  |
+| ------- |
+| [1603-design-parking-system](https://github.com/Sanjeev034/java-tasks/tree/master/1603-design-parking-system) |
+<!---LeetCode Topics End-->
