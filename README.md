@@ -57,6 +57,7 @@
 |  |
 | ------- |
 | [0705-design-hashset](https://github.com/Sanjeev034/java-tasks/tree/master/0705-design-hashset) |
+| [1600-throne-inheritance](https://github.com/Sanjeev034/java-tasks/tree/master/1600-throne-inheritance) |
 ## Linked List
 |  |
 | ------- |
@@ -65,8 +66,17 @@
 |  |
 | ------- |
 | [0705-design-hashset](https://github.com/Sanjeev034/java-tasks/tree/master/0705-design-hashset) |
+| [1600-throne-inheritance](https://github.com/Sanjeev034/java-tasks/tree/master/1600-throne-inheritance) |
 ## Hash Function
 |  |
 | ------- |
 | [0705-design-hashset](https://github.com/Sanjeev034/java-tasks/tree/master/0705-design-hashset) |
+## Tree
+|  |
+| ------- |
+| [1600-throne-inheritance](https://github.com/Sanjeev034/java-tasks/tree/master/1600-throne-inheritance) |
+## Depth-First Search
+|  |
+| ------- |
+| [1600-throne-inheritance](https://github.com/Sanjeev034/java-tasks/tree/master/1600-throne-inheritance) |
 <!---LeetCode Topics End-->
