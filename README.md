@@ -79,4 +79,12 @@
 |  |
 | ------- |
 | [1600-throne-inheritance](https://github.com/Sanjeev034/java-tasks/tree/master/1600-throne-inheritance) |
+## String
+|  |
+| ------- |
+| [1704-determine-if-string-halves-are-alike](https://github.com/Sanjeev034/java-tasks/tree/master/1704-determine-if-string-halves-are-alike) |
+## Counting
+|  |
+| ------- |
+| [1704-determine-if-string-halves-are-alike](https://github.com/Sanjeev034/java-tasks/tree/master/1704-determine-if-string-halves-are-alike) |
 <!---LeetCode Topics End-->
