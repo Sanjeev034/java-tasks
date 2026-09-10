@@ -1,0 +1,93 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+
+public class Solution {
+
+    public static void solve(int n, String s) {
+        // Step 1: Double the string to handle cyclic shifts seamlessly
+        String doubled = s + s;
+        int m = 2 * n;
+
+        // Build transformed string for Manacher's Algorithm
+        char[] t = new char[2 * m + 1];
+        t[0] = '#';
+        for (int i = 0; i < m; i++) {
+            t[2 * i + 1] = doubled.charAt(i);
+            t[2 * i + 2] = '#';
+        }
+
+        int tLen = t.length;
+        int[] p = new int[tLen]; // Radii array
+
+        // Step 2: Manacher's Algorithm O(N)
+        int c = 0, r = 0;
+        for (int i = 0; i < tLen; i++) {
+            int mirror = 2 * c - i;
+            if (i < r) {
+                p[i] = Math.min(r - i, p[mirror]);
+            }
+            while (i - 1 - p[i] >= 0 && i + 1 + p[i] < tLen && t[i - 1 - p[i]] == t[i + 1 + p[i]]) {
+                p[i]++;
+            }
+            if (i + p[i] > r) {
+                c = i;
+                r = i + p[i];
+            }
+        }
+
+        // Arrays to store max palindrome lengths per rotation window k
+        int[] maxPal = new int[n];
+
+        // Step 3: Map palindromes from Manacher's back to rotation boundaries
+        for (int i = 0; i < tLen; i++) {
+            int rad = p[i];
+            if (rad == 0) continue;
+
+            int originalCenter = (i - 1) / 2;
+            boolean isOdd = (i % 2 != 0);
+
+            int palLen = isOdd ? (1 + 2 * (rad / 2)) : (2 * ((rad + 1) / 2));
+            if (palLen > n) palLen = n;
+
+            int startIdx = isOdd ? (originalCenter - rad / 2) : (originalCenter - rad / 2 + 1);
+            int endIdx = isOdd ? (originalCenter + rad / 2) : (originalCenter + rad / 2);
+
+            // Valid range of rotation shifts [minK, maxK] where this full palindrome fits
+            int minK = Math.max(0, endIdx - n + 1);
+            int maxK = Math.min(n - 1, startIdx);
+
+            if (minK <= maxK) {
+                for (int k = minK; k <= maxK; k++) {
+                    maxPal[k] = Math.max(maxPal[k], palLen);
+                }
+            }
+        }
+
+        // Step 4: Bidirectional linear smoothing passes for sub-palindromes O(N)
+        for (int k = 1; k < n; k++) {
+            maxPal[k] = Math.max(maxPal[k], maxPal[k - 1] - 2);
+        }
+        for (int k = n - 2; k >= 0; k--) {
+            maxPal[k] = Math.max(maxPal[k], maxPal[k + 1] - 2);
+        }
+
+        // Fast IO Output
+        StringBuilder output = new StringBuilder();
+        for (int k = 0; k < n; k++) {
+            output.append(maxPal[k]).append("\n");
+        }
+        System.out.print(output);
+    }
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String line1 = br.readLine();
+        if (line1 == null || line1.trim().isEmpty()) return;
+
+        int n = Integer.parseInt(line1.trim());
+        String s = br.readLine().trim();
+
+        solve(n, s);
+    }
+}

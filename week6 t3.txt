@@ -1,0 +1,45 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+
+public class Solution {
+
+    public static String twoStrings(String s1, String s2) {
+        // Boolean array to track characters present in s1 ('a' through 'z')
+        boolean[] presentInS1 = new boolean[26];
+
+        // Mark all characters present in s1
+        for (int i = 0; i < s1.length(); i++) {
+            presentInS1[s1.charAt(i) - 'a'] = true;
+        }
+
+        // Check if any character in s2 exists in s1
+        for (int i = 0; i < s2.length(); i++) {
+            if (presentInS1[s2.charAt(i) - 'a']) {
+                return "YES";
+            }
+        }
+
+        return "NO";
+    }
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        String line = br.readLine();
+        if (line == null || line.trim().isEmpty()) {
+            return;
+        }
+
+        int q = Integer.parseInt(line.trim());
+
+        StringBuilder output = new StringBuilder();
+        for (int i = 0; i < q; i++) {
+            String s1 = br.readLine().trim();
+            String s2 = br.readLine().trim();
+            output.append(twoStrings(s1, s2)).append("\n");
+        }
+
+        System.out.print(output);
+    }
+}
